@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Alert, Text, View, StyleSheet, Button, TextInput, } from 'react-native';
-// import { Button, TextInput } from '@rneui/base';
 import { supabase } from '../config/supabase';
-// import { Register } from '../components/Register';
 
 export default function Login({ changeForm }) {
     const [email, setEmail] = useState('');
@@ -31,9 +29,7 @@ export default function Login({ changeForm }) {
                 <TextInput
                     style={styles.inputOne}
                     placeholder="Email"
-                    onChangeText={(text) => {
-                        setEmail(text);
-                    }}
+                    onChangeText={(text) => setEmail(text)}
                     value={email}
                     keyboardType="email-address"
                     autoCapitalize="none"

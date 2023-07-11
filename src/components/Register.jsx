@@ -24,8 +24,6 @@ export default function Register({ changeForm }) {
     }
     setLoading(false);
 
-    // supabase.auth.verifyOtp({email:``,token:``,type:'signup'})
-
   };
 
   return (
@@ -152,15 +150,4 @@ const styles = StyleSheet.create({
     width: '100px',
     marginLeft: '45px',
   }
-  //   inputFour: {
-  //       flex: 1,
-  //       marginRight: 10,
-  //       paddingHorizontal: 10,
-  //       borderWidth: 1,
-  //       borderColor: 'gray',
-  //       marginBottom: 5,
-  //   },
-  //   conBtn: {
-  //     flexDirection: 'row',
-  //   },
 });

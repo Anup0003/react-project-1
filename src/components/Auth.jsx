@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import Login from './LogIn';
+import LogIn from './LogIn';
 import Register from './Register';
 
 export default function Auth() {
@@ -13,7 +13,7 @@ export default function Auth() {
   const Container = () => {
     switch (form) {
       case 'login':
-        return <Login changeForm={() => changeForm('register')} />;
+        return <LogIn changeForm={() => changeForm('register')} />;
       case 'register':
         return <Register changeForm={() => changeForm('login')} />;
       default:
