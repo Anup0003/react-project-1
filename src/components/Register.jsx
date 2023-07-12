@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, TextInput, Alert } from 'react-native';
 import { supabase } from '../config/supabase';
-import VerifyEmail from '../components/VarifyEmail';
+import VerifyEmail from './VerifyEmail';
 
 export default function Register({ changeForm }) {
   const [email, setEmail] = useState('');

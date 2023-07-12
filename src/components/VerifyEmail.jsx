@@ -124,8 +124,8 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     marginBottom: 5,
   },
-  btn: {
-    width: '10px',
+  btnOne: {
+    marginBottom: '10px',
   },
   btnText: {
     marginLeft: '12px',
